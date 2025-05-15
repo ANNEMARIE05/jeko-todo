@@ -34,7 +34,7 @@ export default function Connexion() {
                             placeholder="Entrer votre mot de passe"
                         />
                     </div>
-                    <Link to={"/inscription"}>
+                    <Link to={"/tachepage"}>
                         <button
                             type="submit"
                             className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
