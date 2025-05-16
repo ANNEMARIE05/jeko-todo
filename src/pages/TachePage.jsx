@@ -40,8 +40,11 @@ export default function TachePage() {
   };
 
   const deconnexion = () => {
-    localStorage.removeItem("utilisateurConnecte");
-    window.location.href = "/connexion";
+    const confirmation = confirm("Voulez-vous vraiment vous deconnecter ?")
+    if (confirmation) {
+      localStorage.removeItem("utilisateurConnecte");
+      window.location.href = "/connexion";
+    }
   };
 
   const tachesFiltrees =
